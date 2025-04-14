@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- FONTES DO GOOGLE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+    <title>Lista de Tarefas</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Lista de Tarefas</h1>
+        <form class="form" id="form">
+            <label>Incluir Tarefa: <input type="text" name="tarefa" id="tarefa"></label>
+            <label>Prioridade: </label>
+            <select name="prioridade" id="prioridade">
+                <option value="baixa">Baixa</option>
+                <option value="media">Média</option>
+                <option value="alta">Alta</option>
+            </select>
+            <label>Incluir como: </label>
+            <select name="status" id="status">
+                <option value="medica">Médica</option>
+                <option value="pessoal">Pessoal</option>
+                <option value="compras">Compras</option>
+                <option value="estudos">Estudos</option>
+            </select>
+            <button type="submit"> Incluir Tarefa</button>
+        </form>
+        <div class="legenda">
+            <h3>Legenda</h3>
+            <div class="item-legenda"><span class="cor prioridade-alta"></span> Alta Prioridade</div>
+            <div class="item-legenda"><span class="cor prioridade-media"></span> Média Prioridade</div>
+            <div class="item-legenda"><span class="cor prioridade-baixa"></span> Baixa Prioridade</div>
+
+        </div>
+        <div class="status">
+            <h3>Status</h3>
+
+            <div class="item-legenda"><span class="cor status-medica"></span> Médica</div>
+            <div class="item-legenda"><span class="cor status-pessoal"></span> Pessoal</div>
+            <div class="item-legenda"><span class="cor status-compras"></span> Compras</div>
+            <div class="item-legenda"><span class="cor status-estudos"></span> Estudos</div>
+        </div>
+        <form id="formLista">
+
+
+        </form>
+
+        <ul class="listaTarefas" id="listaTarefas"></ul>
+
+
+    </div>
+
+
+
+    <script src="script.js"> </script>
+</body>
+
+</html>
